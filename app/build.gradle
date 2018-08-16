@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    
+
+
+    defaultConfig {
+        applicationId "com.example.mirrorfriend.mirrorfriend.app"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+
+    }
+
+    buildTypes {
+       release {
+           minifyEnabled false
+           proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+       }
+    }
+
+}
+
+dependencies {
+    implementation project(':Companion')
+    implementation project(':base')
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+}

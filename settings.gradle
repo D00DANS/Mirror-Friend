@@ -1,0 +1,1 @@
+include ':Companion', ':app', ':base', ':instantapp'
