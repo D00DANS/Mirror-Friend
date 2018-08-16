@@ -20,7 +20,8 @@
         app:layout_constraintBottom_toTopOf="@+id/textViewTextSize"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintRight_toLeftOf="@id/seekBarRefreshRate"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="8dp" />
 
     <TextView
         android:id="@+id/textViewTextSize"
@@ -96,7 +97,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toRightOf="@id/textViewRefreshRate"
         app:layout_constraintTop_toTopOf="parent"
-        tools:targetApi="n" />
+        tools:targetApi="n"
+        android:layout_marginStart="8dp" />
 
     <Switch
         android:id="@+id/switchTextSize"
